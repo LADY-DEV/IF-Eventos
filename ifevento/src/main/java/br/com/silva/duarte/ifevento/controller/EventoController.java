@@ -38,31 +38,10 @@ public class EventoController {
 		   .getDataInicio()));
 		 model.addAttribute("dataFim", sdf.format(evento
 				   .getDataFim()));
-		 
-		/* List<Evento> eventos = (List<Evento>)
-				   request.getSession().getAttribute("eventos");
-				   if (eventos == null) {
-				      eventos = new ArrayList<Evento>();
-				   }
-				   eventos.add(evento);
-				   request.getSession().setAttribute("eventos", eventos);*/
-
-				  // return "exibeEventos";
+		
 		       		return " ";
 				}
-                   /*
-				    @RequestMapping(value = "/listaEventos", method = RequestMethod.GET)
-				    public String listarEventos(
-				  @ModelAttribute("SpringWeb") ModelMap model, HttpServletRequest request) {
-
-				    List<Evento> eventos = (List<Evento>)
-				    request.getAttribute("eventos");
-
-				    model.addAttribute("evento", eventos);
-
-
-				    return "listaEventos";
-				   }  */
+                   
 
 		 
 }
